@@ -1,0 +1,20 @@
+<div>
+  <app-user-profile
+    (myEmitter)="dataReacived($event)"
+    *ngFor="let user of users"
+    [user]="user"
+    [username]="user.name"
+    [salary]="user.salary"
+    [isSingle]="user.isSingle"
+  ></app-user-profile>
+  <!-- <app-user-profile
+    username="shivam"
+    salary="90000"
+    isSingle="true"
+  ></app-user-profile>
+  <app-user-profile
+    username="sundaram"
+    salary="90000"
+    isSingle="false"
+  ></app-user-profile> -->
+</div>

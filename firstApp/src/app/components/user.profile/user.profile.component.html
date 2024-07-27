@@ -1,0 +1,16 @@
+<!-- <h1>User Profile</h1>
+<p>{{ name }}</p>
+<p>{{ role }}</p>
+<button [disabled]="isActive">Done</button>
+<p>{{ input }}</p>
+<input [(ngModel)]="input" />
+
+@for (user of users; track $index) {
+<p>{{ user.name }}</p>
+} -->
+<h2>
+  Name-{{ name }} salary-{{ salary }} single-{{
+    isSingle ? "single" : "not single"
+  }}
+</h2>
+<button (click)="onClick(user)">Emit</button>
