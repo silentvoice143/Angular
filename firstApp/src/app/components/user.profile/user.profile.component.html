@@ -8,9 +8,10 @@
 @for (user of users; track $index) {
 <p>{{ user.name }}</p>
 } -->
-<h2>
-  Name-{{ name }} salary-{{ salary }} single-{{
+<h2 style="border: 1px solid red" appHighlight>
+  Name-{{ name | uppercase }} salary-{{ salary }} single-{{
     isSingle ? "single" : "not single"
   }}
 </h2>
+<!-- <h3>{{ phno | countrycode : "1" : "2" : "3" : "4" }}</h3> -->
 <button (click)="onClick(user)">Emit</button>
