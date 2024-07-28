@@ -8,7 +8,7 @@
 @for (user of users; track $index) {
 <p>{{ user.name }}</p>
 } -->
-<h2 style="border: 1px solid red" appHighlight>
+<h2 #myheading style="border: 1px solid red" appHighlight>
   Name-{{ name | uppercase }} salary-{{ salary }} single-{{
     isSingle ? "single" : "not single"
   }}

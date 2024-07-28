@@ -20,21 +20,26 @@ export class AppComponent {
       salary: 60000,
       isSingle: true,
     },
-    {
-      name: 'shivam',
-      salary: 60000,
-      isSingle: true,
-    },
-    {
-      name: 'shu',
-      salary: 60000,
-      isSingle: true,
-    },
+    // {
+    //   name: 'shivam',
+    //   salary: 60000,
+    //   isSingle: true,
+    // },
+    // {
+    //   name: 'shu',
+    //   salary: 60000,
+    //   isSingle: true,
+    // },
   ];
 
   dataReacived(user: User) {
     console.log(user);
     const index = this.users.indexOf(user);
+    this.users[index].salary = 80000;
     console.log(index);
+  }
+
+  clear() {
+    this.users = [];
   }
 }
